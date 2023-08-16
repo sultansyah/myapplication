@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val tahunSekarang = Calendar.getInstance().get(Calendar.YEAR);
 
         btnClick.setOnClickListener {
+
             val umurmu = tahunSekarang - edtTahun.text.toString().toInt()
             tvHasil.text = "Umur kamu $umurmu Tahun"
         }
